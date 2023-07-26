@@ -1,5 +1,6 @@
 //class is the blueprint and it creates an object
 //constructor creates the object, takes in parameters
+//node allows us to run JS outside the browser
 class Person{
     constructor(name, type , location){
         this.name = name;
