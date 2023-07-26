@@ -1,4 +1,6 @@
-const {Person,testFunction} = require("./Person")
+const {Person,testFunction} = require("./classes/Person")
+const Player = require("./classes/Player")
+const NPC = require("./classes/NPC")
 
 function main(){
     //testing ground
@@ -19,6 +21,26 @@ function main(){
     person2.updateY(3);
 
     console.log(person2.location)
+
+
+    console.log("==== Day 2 INHERITANCE ====")
+
+    let player1 = new Player("Bertha", "Cat", [5,5], "Claws")
+
+    console.log(player1.name);
+    console.log(player1.weapon);
+
+
+    console.log("==== STATIC ====")
+
+    let npc1 = new NPC("Bella", "Cat", [7,8]);
+
+    console.log(NPC.NPC_COUNT)
+
+    let npc2 = new NPC("Maevis", "Cat", [10,3]);
+
+    console.log(NPC.NPC_COUNT)
+    console.log(NPC.tellTime())
 
 }
 
